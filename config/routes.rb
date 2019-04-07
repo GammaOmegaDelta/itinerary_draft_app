@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     post '/itineraries' => 'itineraries#create'
     patch '/itineraries/:id' => 'itineraries#update'
     delete '/itineraries/:id' => 'itineraries#destroy'
+
+    post '/users' => 'users#create'
   end
 end
