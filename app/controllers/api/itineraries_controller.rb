@@ -16,7 +16,8 @@ class Api::ItinerariesController < ApplicationController
       name: params[:name],
       description: params[:description],
       image_url: params[:image_url],
-      address: params[:address]
+      address: params[:address],
+      country: params[:country]
       )
     @itinerary.save
     render 'show.json.jbuilder'
@@ -30,7 +31,8 @@ class Api::ItinerariesController < ApplicationController
       name: params[:name],
       description: params[:description],
       image_url: params[:image_url],
-      address: params[:address]
+      address: params[:address],
+      country: params[:country]
       )
     render 'show.json.jbuilder'
   end

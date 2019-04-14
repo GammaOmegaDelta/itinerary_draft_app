@@ -7,5 +7,11 @@ Rails.application.routes.draw do
     delete '/itineraries/:id' => 'itineraries#destroy'
 
     post '/users' => 'users#create'
+    post '/sessions' => 'sessions#create'
+
+    post '/activities' => 'activities#create'
+    post '/activities' => 'activities#index'
+
+    post '/wishlist' => 'wishlist#create'
   end
 end
